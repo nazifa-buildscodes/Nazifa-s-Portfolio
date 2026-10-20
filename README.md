@@ -8,6 +8,9 @@ A modern and responsive developer portfolio built with React and Vite to showcas
 - **GitHub:** [nazifa-buildscodes](https://github.com/nazifa-buildscodes)
 - **LinkedIn:** [Nazifa Nowsin](https://www.linkedin.com/in/nazifa-nowsin-7b7459243/)
 - **Email:** nazifanowsin2021@gmail.com
+- **Live Portfolio:** [nazifa-nowsin-portfolio.vercel.app](https://nazifa-nowsin-portfolio.vercel.app/)
+- **GitHub Repository:** [Nazifa-s-Portfolio](https://github.com/nazifa-buildscodes/Nazifa-s-Portfolio)
+
 
 ## 🛠️ Built With
 
