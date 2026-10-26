@@ -121,12 +121,12 @@ function Navbar({ active, onNav, theme, onToggleTheme }) {
     <div className="nav-inner">
       <button className="brand" onClick={() => onNav('home')} aria-label="Go to home"><span>NN</span><i>.</i></button>
       <div className="desktop-nav">{NAV.map(([label, id]) => <button key={id} className={active === id ? 'active' : ''} onClick={() => onNav(id)}>{label}</button>)}</div>
-      <div className="nav-actions"><button className="theme-toggle" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>{theme === 'dark' ? '☼' : '☾'} <span>{theme === 'dark' ? 'Light' : 'Dark'}</span></button><a className="nav-cv" href="/cv-nazifa.pdf" download="cv-nazifa.pdf">Download CV <span>↗</span></a></div>
+      <div className="nav-actions"><button className="theme-toggle" onClick={onToggleTheme} aria-label={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`} title={`Switch to ${theme === 'dark' ? 'light' : 'dark'} mode`}>{theme === 'dark' ? '☼' : '☾'} <span>{theme === 'dark' ? 'Light' : 'Dark'}</span></button><a className="nav-cv" href="/NazifaNowsin-cv.pdf" download="NazifaNowsin-cv.pdf">Download CV <span>↗</span></a></div>
       <button className={`menu-toggle ${open ? 'open' : ''}`} onClick={() => setOpen(v => !v)} aria-label={open ? 'Close menu' : 'Open menu'} aria-expanded={open} aria-controls="mobile-nav"><span /><span /></button>
     </div>
     <div id="mobile-nav" className={`mobile-nav ${open ? 'open' : ''}`}>
       {NAV.map(([label, id]) => <button key={id} className={active === id ? 'active' : ''} onClick={() => { onNav(id); setOpen(false); }}>{label}<span>↗</span></button>)}
-      <a href="/cv-nazifa.pdf" download="cv-nazifa.pdf" onClick={() => setOpen(false)}>Download CV ↗</a>
+      <a href="/NazifaNowsin-cv.pdf" download="NazifaNowsin-cv.pdf" onClick={() => setOpen(false)}>Download CV ↗</a>
     </div>
   </nav>;
 }
@@ -140,7 +140,7 @@ function Hero({ onNav }) {
       <h1>Building my future<br /><span>in Full Stack Development.</span></h1>
       <p className="hero-description">I’m an aspiring AI-Driven Full Stack Web Engineer, learning by building real applications. I’m confident in my ability to learn, ready to contribute, and focused on JavaScript, TypeScript, React, Next.js, Node.js and AI-assisted development.</p>
       <div className="hero-stack" aria-label="Primary technology focus">{['JavaScript', 'TypeScript', 'React', 'Next.js', 'Node.js', 'Express', 'MongoDB'].map((x, i) => <span key={x} className={`stack-pill pill-${i}`}>{x}</span>)}</div>
-      <div className="hero-actions"><button className="btn btn-primary" onClick={() => onNav('projects')}>Explore my projects <span>↗</span></button><a className="btn btn-ghost" href="/cv-nazifa.pdf" download="cv-nazifa.pdf">Download CV <span>↓</span></a></div>
+      <div className="hero-actions"><button className="btn btn-primary" onClick={() => onNav('projects')}>Explore my projects <span>↗</span></button><a className="btn btn-ghost" href="/NazifaNowsin-cv.pdf" download="NazifaNowsin-cv.pdf">Download CV <span>↓</span></a></div>
       <div className="hero-socials"><a href="https://github.com/nazifa-buildscodes" target="_blank" rel="noreferrer">GitHub ↗</a><a href="https://www.linkedin.com/in/nazifa-nowsin-7b7459243/" target="_blank" rel="noreferrer">LinkedIn ↗</a><a href="mailto:nazifanowsin2021@gmail.com">Email ↗</a></div>
       <a className="scroll-cue" href="#about" aria-label="Scroll to about section"><span /> Scroll to explore</a>
     </div>
@@ -177,7 +177,7 @@ function About() {
 function Journey() {
   return <section id="experience" className="section section-soft section-anchor"><div className="wrap">
     <div className="background-columns">
-      <div className="background-column"><div className="column-heading"><span>01</span><h3>Education</h3></div>{EDUCATION.map((item) => <article className="background-item" key={item.org}><time>{item.date}</time><h4>{item.role}</h4><strong>{item.org}</strong><p>{item.note}</p></article>)}<a className="btn btn-ghost education-cv" href="/cv-nazifa.pdf" target="_blank" rel="noreferrer">Show CV <span>↗</span></a></div>
+      <div className="background-column"><div className="column-heading"><span>01</span><h3>Education</h3></div>{EDUCATION.map((item) => <article className="background-item" key={item.org}><time>{item.date}</time><h4>{item.role}</h4><strong>{item.org}</strong><p>{item.note}</p></article>)}<a className="btn btn-ghost education-cv" href="/NazifaNowsin-cv.pdf" target="_blank" rel="noreferrer">Show CV <span>↗</span></a></div>
       <div className="background-column"><div className="column-heading"><span>02</span><h3>Experience & training</h3></div>{EXPERIENCE.map((item) => <article className="background-item" key={`${item.org}-${item.role}`}><div className="background-meta"><time>{item.date}</time><span className={item.type === 'Training' ? 'type-training' : ''}>{item.type}</span></div><h4>{item.role}</h4><strong>{item.org}</strong><p>{item.note}</p></article>)}</div>
     </div>
   </div></section>;
