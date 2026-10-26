@@ -26,21 +26,73 @@ const SKILLS = [
   { name: 'Git & GitHub', group: 'Tools', level: 'Project workflow', focus: 62, color: '#f97316', note: 'Version control and repository workflow' },
 ];
 
+
 const PROJECTS = [
-  { name: 'BazarDor', kind: 'Next.js · Full stack learning project', summary: 'A marketplace-style application exploring product browsing, category data, authentication and API integration.', stack: ['Next.js', 'React', 'Better Auth', 'MongoDB Atlas', 'API integration'], color: '#60a5fa', mark: 'BD', repoUrl: 'https://github.com/nazifa-buildscodes/BazarDor-as7-ph', liveUrl: 'https://bazar-dor-as7-ph-zzjl.vercel.app/', details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.' },
-  { name: 'Dev Stack Builder', kind: 'React · Interactive UI', summary: 'An interactive interface for exploring technology cards and managing selected stack items.', stack: ['React', 'JavaScript', 'CSS', 'JSON data'], color: '#34d399', mark: 'DS', repoUrl: 'https://github.com/nazifa-buildscodes/dev-stack-react-assignment-5', liveUrl: 'https://dev-stack-react-assignment-5.vercel.app/', details: 'Focused on reusable cards, data-driven rendering, selected-stack state and add/remove interactions.' },
-  { name: 'DevConf 2026', kind: 'Frontend · Design implementation', summary: 'A conference landing page based on a Figma reference, including speakers, pricing and hackathon sections.', stack: ['HTML', 'CSS', 'Responsive UI'], color: '#a78bfa', mark: 'DC', repoUrl: 'https://github.com/Ahona-001/nazifa_b14_ph_as1', liveUrl: 'https://ahona-001.github.io/nazifa_b14_ph_as1/', details: 'Focused on translating the Figma layout into responsive sections with consistent spacing and typography.' },
-{
-  name: 'FitLog',
-  kind: 'Fitness · Gym & Exercise',
-  summary: 'A fitness-focused web application designed to help users explore gym exercises and support their workout journey.',
-  stack: ['Next.js', 'React', 'JavaScript', 'Fitness UI'],
-  color: '#f472b6',
-  mark: 'FL',
-  repoUrl: 'https://github.com/nazifa-buildscodes/fitlog-nextjs-phasgn',
-  liveUrl: 'https://fitlog-nextjs-phasgn.vercel.app/',
-  details: 'A gym and exercise project focused on fitness-related content and workout experiences. Explore the live demo to see the implemented features.'
-},];
+  {
+    name: 'BazarDor',
+    kind: 'Next.js · Full stack learning project',
+    summary:
+      'A marketplace-style application exploring product browsing, category data, authentication and API integration.',
+    stack: [
+      'Next.js',
+      'React',
+      'Better Auth',
+      'MongoDB Atlas',
+      'API integration',
+    ],
+    color: '#60a5fa',
+    mark: 'BD',
+    image: '/bazardor.png',
+    repoUrl: 'https://github.com/nazifa-buildscodes/BazarDor-as7-ph',
+    liveUrl: 'https://bazar-dor-as7-ph-zzjl.vercel.app/',
+    details:
+      'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
+  },
+  {
+    name: 'Dev Stack Builder',
+    kind: 'React · Interactive UI',
+    summary:
+      'An interactive interface for exploring technology cards and managing selected stack items.',
+    stack: ['React', 'JavaScript', 'CSS', 'JSON data'],
+    color: '#34d399',
+    mark: 'DS',
+    image: '/dev-stack.png',
+    repoUrl:
+      'https://github.com/nazifa-buildscodes/dev-stack-react-assignment-5',
+    liveUrl: 'https://dev-stack-react-assignment-5.vercel.app/',
+    details:
+      'Focused on reusable cards, data-driven rendering, selected-stack state and add/remove interactions.',
+  },
+  {
+    name: 'DevConf 2026',
+    kind: 'Frontend · Design implementation',
+    summary:
+      'A conference landing page based on a Figma reference, including speakers, pricing and hackathon sections.',
+    stack: ['HTML', 'CSS', 'Responsive UI'],
+    color: '#a78bfa',
+    mark: 'DC',
+    image: '/devconf.png',
+    repoUrl: 'https://github.com/Ahona-001/nazifa_b14_ph_as1',
+    liveUrl: 'https://ahona-001.github.io/nazifa_b14_ph_as1/',
+    details:
+      'Focused on translating the Figma layout into responsive sections with consistent spacing and typography.',
+  },
+  {
+    name: 'FitLog',
+    kind: 'Fitness · Gym & Exercise',
+    summary:
+      'A fitness-focused web application designed to help users explore gym exercises and support their workout journey.',
+    stack: ['Next.js', 'React', 'JavaScript', 'Fitness UI'],
+    color: '#f472b6',
+    mark: 'FL',
+    image: '/fitlog.png',
+    repoUrl: 'https://github.com/nazifa-buildscodes/fitlog-nextjs-phasgn',
+    liveUrl: 'https://fitlog-nextjs-phasgn.vercel.app/',
+    details:
+      'A gym and exercise project focused on fitness-related content and workout experiences. Explore the live demo to see the implemented features.',
+  },
+];
+
 
 const CERTIFICATES = []; // Add verified certificate records here; never add invented credentials.
 
@@ -230,26 +282,215 @@ function MernStack() {
   return <section className="section"><div className="wrap"><div className="mern-panel"><div className="mern-copy"><span className="eyebrow">05 — MODERN STACK</span><h2>One request.<br /><span>A connected system.</span></h2><p>MERN connects a React interface, a Node/Express API and a MongoDB database. Next.js can also provide a React-based application framework in the same broader JavaScript ecosystem.</p><div className="mern-detail" aria-live="polite"><span>{current.role}</span><strong>{current.name}</strong><p>{current.detail}</p></div></div><div className="architecture"><div className="arch-client">Browser / User</div><div className="arch-arrow">request ↓ · response ↑</div><div className="arch-node-grid">{layers.map((layer, i) => <button key={layer.key} className={`arch-node arch-${i} ${selected === layer.key ? 'selected' : ''}`} onClick={() => setSelected(layer.key)} aria-pressed={selected === layer.key}><span>{['01', '02', '03'][i]}</span><strong>{layer.name}</strong><small>{layer.role}</small></button>)}</div><div className="arch-caption">Select a layer to explore its responsibility</div></div></div><div className="stack-note"><span>NOTE</span><p>SQL/MySQL is a relational database option and is shown separately below; it is not one of the four technologies in the MERN acronym.</p></div></div></section>;
 }
 
+
 function Projects() {
   const [ref, visible] = useReveal();
   const [selected, setSelected] = useState(null);
-  return <section className="section section-anchor"><div className="wrap" ref={ref}>
-    <SectionHeader title="Selected projects" copy="A selection of practical work and learning projects." />
-    <div className="projects-grid">{PROJECTS.map((project, i) => <article className={`project-card ${visible ? 'show' : ''}`} key={project.name} style={{'--project-color':project.color,'--delay':`${i*60}ms`}}>
-      <button className="project-open" onClick={() => setSelected(project)} aria-label={`View details for ${project.name}`}>
-        <div className="project-visual"><span style={{color:project.color}}>{project.mark}</span></div>
-        <div className="project-body"><span className="project-kind">{project.kind}</span><h3>{project.name}</h3><p>{project.summary}</p><div className="project-tags">{project.stack.map(item=><span key={item}>{item}</span>)}</div></div>
-      </button>
-      <div className="project-links">{project.repoUrl && <a href={project.repoUrl} target="_blank" rel="noreferrer">GitHub ↗</a>}{project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer">Live demo ↗</a>}<button onClick={() => setSelected(project)}>Details ↗</button></div>
-    </article>)}</div>
-    {selected && <ProjectDialog project={selected} onClose={() => setSelected(null)} />}
-  </div></section>;
+
+  return (
+    <section className="section section-anchor">
+      <div className="wrap" ref={ref}>
+        <SectionHeader
+          title="Selected projects"
+          copy="A selection of practical work and learning projects."
+        />
+
+        <div className="projects-grid">
+          {PROJECTS.map((project, i) => (
+            <article
+              className={`project-card ${visible ? 'show' : ''}`}
+              key={project.name}
+              style={{
+                '--project-color': project.color,
+                '--delay': `${i * 60}ms`,
+              }}
+            >
+              <button
+                type="button"
+                className="project-open"
+                onClick={() => setSelected(project)}
+                aria-label={`View details for ${project.name}`}
+              >
+                <div className="project-visual">
+                  {project.image ? (
+                    <img
+                      className="project-image"
+                      src={project.image}
+                      alt={`${project.name} website screenshot`}
+                      loading="lazy"
+                    />
+                  ) : (
+                    <span style={{ color: project.color }}>
+                      {project.mark}
+                    </span>
+                  )}
+                </div>
+
+                <div className="project-body">
+                  <span className="project-kind">{project.kind}</span>
+                  <h3>{project.name}</h3>
+                  <p>{project.summary}</p>
+
+                  <div className="project-tags">
+                    {project.stack.map((item) => (
+                      <span key={item}>{item}</span>
+                    ))}
+                  </div>
+                </div>
+              </button>
+
+              <div className="project-links">
+                {project.repoUrl && (
+                  <a
+                    href={project.repoUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    GitHub ↗
+                  </a>
+                )}
+
+                {project.liveUrl && (
+                  <a
+                    href={project.liveUrl}
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    Live demo ↗
+                  </a>
+                )}
+
+                <button
+                  type="button"
+                  onClick={() => setSelected(project)}
+                >
+                  View Details ↗
+                </button>
+              </div>
+            </article>
+          ))}
+        </div>
+
+        {selected && (
+          <ProjectDialog
+            project={selected}
+            onClose={() => setSelected(null)}
+          />
+        )}
+      </div>
+    </section>
+  );
 }
 
 function ProjectDialog({ project, onClose }) {
   const closeRef = useRef(null);
-  useEffect(() => { closeRef.current?.focus(); const onKey = e => { if (e.key === 'Escape') onClose(); }; window.addEventListener('keydown', onKey); return () => window.removeEventListener('keydown', onKey); }, [onClose]);
-  return <div className="modal-backdrop" role="presentation" onMouseDown={e => { if (e.target === e.currentTarget) onClose(); }}><section className="detail-modal" role="dialog" aria-modal="true" aria-labelledby="project-dialog-title"><button ref={closeRef} className="modal-close" onClick={onClose} aria-label="Close project details">×</button><span className="eyebrow">PROJECT NOTES</span><h2 id="project-dialog-title">{project.name}</h2><p>{project.details}</p><h3>Technology focus</h3><div className="project-tags">{project.stack.map(s => <span key={s}>{s}</span>)}</div><div className="project-modal-links">{project.repoUrl && <a href={project.repoUrl} target="_blank" rel="noreferrer">Open GitHub repository ↗</a>}{project.liveUrl && <a href={project.liveUrl} target="_blank" rel="noreferrer">Open live demo ↗</a>}</div></section></div>;
+
+  useEffect(() => {
+    closeRef.current?.focus();
+
+    const onKey = (e) => {
+      if (e.key === 'Escape') onClose();
+    };
+
+    window.addEventListener('keydown', onKey);
+
+    return () => window.removeEventListener('keydown', onKey);
+  }, [onClose]);
+
+  return (
+    <div
+      className="modal-backdrop"
+      role="presentation"
+      onMouseDown={(e) => {
+        if (e.target === e.currentTarget) onClose();
+      }}
+    >
+      <section
+        className="detail-modal"
+        role="dialog"
+        aria-modal="true"
+        aria-labelledby="project-dialog-title"
+      >
+        <button
+          ref={closeRef}
+          type="button"
+          className="modal-close"
+          onClick={onClose}
+          aria-label="Close project details"
+        >
+          ×
+        </button>
+
+        {project.image && (
+          <img
+            className="project-detail-image"
+            src={project.image}
+            alt={`${project.name} project screenshot`}
+          />
+        )}
+
+        <span className="eyebrow">PROJECT DETAILS</span>
+
+        <h2 id="project-dialog-title">{project.name}</h2>
+
+        <p>{project.summary}</p>
+
+        <h3>Main Technology Stack</h3>
+        <div className="project-tags">
+          {project.stack.map((item) => (
+            <span key={item}>{item}</span>
+          ))}
+        </div>
+
+        <h3>Project Overview</h3>
+        <p>{project.details}</p>
+
+        {project.challenges?.length > 0 && (
+          <>
+            <h3>Challenges Faced</h3>
+            <ul>
+              {project.challenges.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        {project.improvements?.length > 0 && (
+          <>
+            <h3>Future Improvements</h3>
+            <ul>
+              {project.improvements.map((item, i) => (
+                <li key={i}>{item}</li>
+              ))}
+            </ul>
+          </>
+        )}
+
+        <div className="project-modal-links">
+          {project.repoUrl && (
+            <a
+              href={project.repoUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open GitHub Repository ↗
+            </a>
+          )}
+
+          {project.liveUrl && (
+            <a
+              href={project.liveUrl}
+              target="_blank"
+              rel="noreferrer"
+            >
+              Open Live Demo ↗
+            </a>
+          )}
+        </div>
+      </section>
+    </div>
+  );
 }
 
 function ReactLab() {
