@@ -69,16 +69,16 @@ const PROJECTS = [
     repoUrl:
       'https://github.com/nazifa-buildscodes/dev-stack-react-assignment-5',
     liveUrl: 'https://dev-stack-react-assignment-5.vercel.app/',
-    details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
-
+    details: 'Built an interactive technology explorer with reusable cards, data-driven rendering, and add/remove interactions for managing selected technology stack items.',
   challenges: [
-    'Configuring environment variables and MongoDB Atlas.',
-    'Integrating authentication and product/category APIs.',
+    'Rendering technology cards dynamically from structured data.',
+    'Managing selected items and keeping the interface synchronized with user interactions.',
+    'Maintaining a consistent layout across different screen sizes.',
   ],
-
   improvements: [
-    'Improve loading and error states.',
-    'Expand testing and strengthen authentication flows.',
+    'Add search and filtering to help users find technologies faster.',
+    'Allow users to save or export their selected technology stack.',
+    'Improve accessibility and add more interaction feedback.',
   ],
   },
   {
@@ -92,16 +92,16 @@ const PROJECTS = [
     image: '/devconf.png',
     repoUrl: 'https://github.com/Ahona-001/nazifa_b14_ph_as1',
     liveUrl: 'https://ahona-001.github.io/nazifa_b14_ph_as1/',
-    details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
-
+    details: 'Implemented a conference landing page based on a Figma design, focusing on layout accuracy, typography, spacing, and responsive sections.',
   challenges: [
-    'Configuring environment variables and MongoDB Atlas.',
-    'Integrating authentication and product/category APIs.',
+    'Translating the Figma reference into a structured webpage.',
+    'Matching spacing, typography, and section layouts to the design.',
+    'Making the page adapt to different screen sizes.',
   ],
-
   improvements: [
-    'Improve loading and error states.',
-    'Expand testing and strengthen authentication flows.',
+    'Improve responsive layouts for smaller mobile screens.',
+    'Add subtle animations and interactions where appropriate.',
+    'Improve accessibility and optimize image loading.',
   ],
   },
   {
@@ -115,16 +115,16 @@ const PROJECTS = [
     image: '/fitlog.png',
     repoUrl: 'https://github.com/nazifa-buildscodes/fitlog-nextjs-phasgn',
     liveUrl: 'https://fitlog-nextjs-phasgn.vercel.app/',
-   details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
-
+   details: 'Developed a fitness-focused web experience using Next.js and React, with an interface centered on gym exercises and workout-related content.',
   challenges: [
-    'Configuring environment variables and MongoDB Atlas.',
-    'Integrating authentication and product/category APIs.',
+    'Organizing fitness-related content into a clear and easy-to-explore interface.',
+    'Maintaining a consistent visual hierarchy across the page.',
+    'Ensuring the interface remains usable on different screen sizes.',
   ],
-
   improvements: [
-    'Improve loading and error states.',
-    'Expand testing and strengthen authentication flows.',
+    'Add personalized workout plans and progress tracking.',
+    'Introduce exercise search and filtering options.',
+    'Improve accessibility, performance, and mobile usability.',
   ],
   },
 ];
