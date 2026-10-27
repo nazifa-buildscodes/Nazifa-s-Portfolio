@@ -575,3 +575,21 @@ footer { padding-block: 18px; }
     white-space: nowrap;
   }
 }
+
+/* Profile name badge — readable in light mode */
+.hero-caption {
+  background: #ffffff;
+  color: #171725;
+  border: 1px solid #d6d8e3;
+  box-shadow: 0 8px 24px rgba(20, 20, 40, 0.12);
+}
+
+.hero-caption h3,
+.hero-caption .name {
+  color: #171725;
+}
+
+.hero-caption p,
+.hero-caption .role {
+  color: #475569;
+}
