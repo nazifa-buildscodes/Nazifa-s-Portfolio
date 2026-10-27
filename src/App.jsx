@@ -45,8 +45,17 @@ const PROJECTS = [
     image: '/bazardor.png',
     repoUrl: 'https://github.com/nazifa-buildscodes/BazarDor-as7-ph',
     liveUrl: 'https://bazar-dor-as7-ph-zzjl.vercel.app/',
-    details:
-      'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
+    details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
+
+  challenges: [
+    'Configuring environment variables and MongoDB Atlas.',
+    'Integrating authentication and product/category APIs.',
+  ],
+
+  improvements: [
+    'Improve loading and error states.',
+    'Expand testing and strengthen authentication flows.',
+  ],
   },
   {
     name: 'Dev Stack Builder',
@@ -60,8 +69,17 @@ const PROJECTS = [
     repoUrl:
       'https://github.com/nazifa-buildscodes/dev-stack-react-assignment-5',
     liveUrl: 'https://dev-stack-react-assignment-5.vercel.app/',
-    details:
-      'Focused on reusable cards, data-driven rendering, selected-stack state and add/remove interactions.',
+    details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
+
+  challenges: [
+    'Configuring environment variables and MongoDB Atlas.',
+    'Integrating authentication and product/category APIs.',
+  ],
+
+  improvements: [
+    'Improve loading and error states.',
+    'Expand testing and strengthen authentication flows.',
+  ],
   },
   {
     name: 'DevConf 2026',
@@ -74,8 +92,17 @@ const PROJECTS = [
     image: '/devconf.png',
     repoUrl: 'https://github.com/Ahona-001/nazifa_b14_ph_as1',
     liveUrl: 'https://ahona-001.github.io/nazifa_b14_ph_as1/',
-    details:
-      'Focused on translating the Figma layout into responsive sections with consistent spacing and typography.',
+    details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
+
+  challenges: [
+    'Configuring environment variables and MongoDB Atlas.',
+    'Integrating authentication and product/category APIs.',
+  ],
+
+  improvements: [
+    'Improve loading and error states.',
+    'Expand testing and strengthen authentication flows.',
+  ],
   },
   {
     name: 'FitLog',
@@ -88,8 +115,17 @@ const PROJECTS = [
     image: '/fitlog.png',
     repoUrl: 'https://github.com/nazifa-buildscodes/fitlog-nextjs-phasgn',
     liveUrl: 'https://fitlog-nextjs-phasgn.vercel.app/',
-    details:
-      'A gym and exercise project focused on fitness-related content and workout experiences. Explore the live demo to see the implemented features.',
+   details: 'Worked on environment configuration, MongoDB Atlas setup, Better Auth flows and product/category API integration.',
+
+  challenges: [
+    'Configuring environment variables and MongoDB Atlas.',
+    'Integrating authentication and product/category APIs.',
+  ],
+
+  improvements: [
+    'Improve loading and error states.',
+    'Expand testing and strengthen authentication flows.',
+  ],
   },
 ];
 
